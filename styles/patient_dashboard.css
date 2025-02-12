@@ -1,0 +1,89 @@
+
+.dashboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.week-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-dashboard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 30vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+}
+
+.calendar-day {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  height: 28vh;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.calendar-day:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  width: 101%;
+  text-align: center;
+  padding: 10px;
+  margin-top: -11px;
+  margin-left: -11px;
+  border-radius: 5px 5px 0 0;
+  background-color: #3a4750;
+  color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.calendar-body {
+  width: 101%;
+  height: 20vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.calendar-body::-webkit-scrollbar {
+  display: none;
+}
+.activity {
+  min-height: 35px;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.activity-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  color: white;
+}
+
+.activity:last-child {
+  margin-bottom: 10px;
+}

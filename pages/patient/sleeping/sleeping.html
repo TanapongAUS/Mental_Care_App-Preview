@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="
+    Group 15:
+    1. Kongphenglee Leelianou (email: leel0007@flinders.edu.au)
+    2. Setthaluck Smithiweerakun (email: smit2089@flinders.edu.au)
+    3. Tanapong Dechsakul (email: dech0009@flinders.edu.au)
+    4. Osama Anees (email: anee0002@flinders.edu.au)
+    5. Nabin Rai (email: rai0152@flinders.edu.au)" />
+    <title>Sleeping Cycles</title>
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="../../../styles/global.css" />
+    <link rel="stylesheet" href="../../../styles/sleeping.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="profile-container">
+          <img
+            class="profile"
+            src="../../../public/images/pexels-klaus-nielsen-6303797.jpg"
+            alt="brand-image" />
+          <p>Ethan Mitchell</p>
+        </span>
+        <ul>
+          <li>
+            <a href="../dashboard.html">
+              <i class="fa fa-table-columns"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-book"></i>Journals
+          </li>
+          <li>
+            <a href="./sleeping.html">
+              <i class="fa fa-bed"></i>Sleeping
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-utensils"></i>Eating
+          </li>
+          <li>
+            <i class="fa fa-person-walking"></i>Exercises
+          </li>
+          <li>
+            <i class="fa fa-star"></i>Affirmations
+          </li>
+          <li>
+            <a href="../../../index.html"
+              ><i class="fa fa-right-from-bracket"></i>Sign Out</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1 class="dashboard-title">My Sleeping Cycles</h1>
+      <a href="./addSleep.html" class="add"><button class="btn btn-add"><i class="fa fa-circle-plus"></i>Click to add new sleeping record</button></a>
+        
+      <div class="sleep-record-container">
+        <table id="timer">
+
+          <thead>
+            <tr>
+                <th>Sleep Date</th>
+                <th>Sleep Time</th>
+                <th>Wake-up Time</th>
+                <th>Total Sleep Hours</th>
+                <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- <tr>
+                <td>27/08/2024</td>
+                <td>11:40 PM</td>
+                <td>08:30 AM</td>
+                <td>08:50 Hrs.</td>
+                <td>
+                    <a href="./addSleep.html" class="action"><i class="fas fa-edit"></i></a>
+                    <a href="./addSleep.html" class="action"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr> -->
+            <!-- <tr>
+                <td id="sleep-date-cell"></td>
+                <td id="sleep-time-cell"></td>
+                <td id="wake-time-cell"></td>
+                <td id="total-sleep-cell"></td>
+                <td>
+                    <a href="./addSleep.html" class="action"><i class="fas fa-edit"></i></a>
+                    <a href="./addSleep.html" class="action"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr> -->
+          </tbody>
+        </table>
+
+        <div class="pagination" id="pagination">
+            <!-- <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a> -->
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="copy-right">
+            <p>&copy;2024 by CaRe. All rights reserved.</p>
+          </div>
+          <div class="contact-details">
+            <span>
+              <i class="fa fa-phone"></i>
+              <p>0412354143</p>
+            </span>
+            <span>
+              <i class="fa fa-envelope"></i>
+              <p>care-support@care.com.au</p>
+            </span>
+          </div>
+        </div>
+    </footer>
+
+    <script defer src="../../../scripts/sleep.js"></script>
+
+  </body>
+</html>

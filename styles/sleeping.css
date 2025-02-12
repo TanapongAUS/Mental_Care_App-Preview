@@ -1,0 +1,145 @@
+/* Use for addSleep.html*/
+.dashboard-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.add-sleep-container {
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 8%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 70%;
+  padding: 1% 10% 2% 10%;
+  box-shadow: 10px 5px 5px gray;
+}
+.add-sleep-container:hover {
+  /* box-shadow: 0 15px 25px rgba(8, 212, 134, 0.8); */
+}
+
+#timet {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#timet td {
+  width: 150px;
+  padding: 3%;
+}
+label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#sleep-date {
+  width: 150px;
+  height: 30px;
+}
+#sleep-time {
+  width: 150px;
+  height: 30px;
+}
+#wake-time {
+  width: 150px;
+  height: 30px;
+}
+
+.save {
+  display: block;
+  text-align: center;
+}
+.modal-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+.modal-footer {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ========================================================================================= */
+
+/* Use for sleeping.html */
+.add {
+  display: block;
+  text-align: center;
+}
+.btn-add {
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.sleep-record-container {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  height: 50%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#timer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+#timer th {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 6px 12px;
+  text-align: center;
+  /* border: 2px solid #f0f0f0; */
+}
+#timer td {
+  padding: 4px 12px;
+  text-align: center;
+  /* border: 2px solid #f0f0f0; */
+}
+
+.action {
+  display: inline-flex;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.btn-edit {
+  color: #fff;
+  background-color: #1d4ed8;
+  border: none;
+  padding: 4px;
+}
+.btn-delete {
+  color: #fff;
+  background-color: #e11d48;
+  border: none;
+  padding: 4px;
+}
+
+/* ========================================================================================= */
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #1d4ed8;
+  color: white;
+}

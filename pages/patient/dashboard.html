@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="
+    Group 15:
+    1. Kongphenglee Leelianou (email: leel0007@flinders.edu.au)
+    2. Setthaluck Smithiweerakun (email: smit2089@flinders.edu.au)
+    3. Tanapong Dechsakul (email: dech0009@flinders.edu.au)
+    4. Osama Anees (email: anee0002@flinders.edu.au)
+    5. Nabin Rai (email: rai0152@flinders.edu.au)" />
+    <title>Dashboard</title>
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/patient_dashboard.css" />
+    <script src="../../scripts/patient_dashboard.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="profile-container">
+          <img
+            class="profile"
+            src="../../public/images/pexels-klaus-nielsen-6303797.jpg"
+            alt="brand-image" />
+          <p>Ethan Mitchell</p>
+        </span>
+        <ul>
+          <li>
+            <a href="./dashboard.html">
+              <i class="fa fa-table-columns"></i>Dashboard
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-book"></i>Journals
+          </li>
+          <li>
+            <a href="./sleeping/sleeping.html">
+              <i class="fa fa-bed"></i>Sleeping
+            </a>
+          </li>
+          <li>
+            <i class="fa fa-utensils"></i>Eating
+          </li>
+          <li>
+            <i class="fa fa-person-walking"></i>Exercises
+          </li>
+          <li>
+            <i class="fa fa-star"></i>Affirmations
+          </li>
+          <li>
+            <a href="../../index.html"
+              ><i class="fa fa-right-from-bracket"></i>Sign Out</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="dashboard-title">My Activities</h1>
+      <h2 class="week-title">Current Week</h2>
+      <div class="calendar-dashboard" id="currentWeek">
+        <div class="calendar-day">
+          <p class="calendar-header">Monday</p>
+          <div class="calendar-body" id="cw-day-1"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Tuesday</p>
+          <div class="calendar-body" id="cw-day-2"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Wednesday</p>
+          <div class="calendar-body" id="cw-day-3"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Thursday</p>
+          <div class="calendar-body" id="cw-day-4"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Friday</p>
+          <div class="calendar-body" id="cw-day-5"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Saturday</p>
+          <div class="calendar-body" id="cw-day-6"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Sunday</p>
+          <div class="calendar-body" id="cw-day-7"></div>
+        </div>
+      </div>
+      <h2 class="week-title">Last Week</h2>
+      <div class="calendar-dashboard" id="lastWeek">
+        <div class="calendar-day">
+          <p class="calendar-header">Monday</p>
+          <div class="calendar-body" id="lw-day-1"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Tuesday</p>
+          <div class="calendar-body" id="lw-day-2"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Wednesday</p>
+          <div class="calendar-body" id="lw-day-3"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Thursday</p>
+          <div class="calendar-body" id="lw-day-4"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Friday</p>
+          <div class="calendar-body" id="lw-day-5"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Saturday</p>
+          <div class="calendar-body" id="lw-day-6"></div>
+        </div>
+        <div class="calendar-day">
+          <p class="calendar-header">Sunday</p>
+          <div class="calendar-body" id="lw-day-7"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="copy-right">
+          <p>&copy;2024 by CaRe. All rights reserved.</p>
+        </div>
+        <div class="contact-details">
+          <span>
+            <i class="fa fa-phone"></i>
+            <p>0412354143</p>
+          </span>
+          <span>
+            <i class="fa fa-envelope"></i>
+            <p>care-support@care.com.au</p>
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Use for overall therapist */
+.date-therapist {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* ========================================================================================= */
+
+/* Use for page 'patient_group' */
+.patient-group-title {
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    justify-items: center;
+    display: block;
+}
+
+.patient-group-main-container {
+    padding: 0px;
+    padding-bottom: 75px;
+    margin: 0px;
+    display: flex;
+}
+
+.patient-group-side {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.group-patient {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+
+    width: calc(45%);
+    height: 300px;
+    align-items: top;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.group-patient:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+.group-patient-header{
+    margin: 0%;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    height: 90px; 
+    background-color: #3a4750;
+}
+.group-name {
+    width: 40%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: azure;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline;
+}
+.group-description {
+    margin-top: 10px;
+    height: 50px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: azure;
+    font-size: 0.8em;
+    border-radius: 5px;
+    display: block;
+    overflow-y: scroll;
+}
+.btn-edit {
+    float: right;
+    padding: 0px 5px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #1d4ed8;
+    border-radius: 10px;
+    color: #fff;
+}
+.btn-edit:hover {
+    background-color: #1e40af;
+}
+
+.group-patient-body {
+    padding: 10px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.group-patient-card {
+    margin: 0px 22px 25px 0px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-items: center;
+    z-index: 99;
+}
+.group-patient-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.group-patient-pic:hover {
+    transform: scale(2);
+}
+
+.patient-btn-side {
+    margin-left: 0px;
+    margin-right: 30px;
+    padding: 10px;
+    width: 15%;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.patient-btn-side:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* ========================================================================================= */
+
+/* Use for page 'create_group' */
+.create-group-main-container {
+    padding: 0px;
+    padding-bottom: 50px;
+    margin: 0px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.create-group-title {
+    margin: 10px 0px 15px 0px;
+    text-align: center;
+    justify-items: center;
+    display: block;
+}
+
+/* Patient side */
+/* ============ */
+.box-patient {
+    margin: 0px 15px 0px 30px;
+    background-color: #fff;
+    width: 50%;
+    height: 68vh;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+}
+.box-patient:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.patient-detail{
+    margin: 0px;
+    padding: 0px 15px 10px 15px;
+    height: 55vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    display: block;
+    
+    gap: 1px;
+}
+
+.member-card {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #3a4750;
+    transition: box-shadow 0.3s ease;
+    height: 140px;
+    padding: 10px;
+    background-color: #3a4750;
+    color: #ffffff;
+}
+.member-card:hover {
+    box-shadow: 0 5px 15px rgb(2, 155, 40);
+}
+
+.patient-inner-detail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 70px;
+    background-color: azure;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 0.8em;
+    padding: 5px
+}
+
+
+/* New group side */
+/* ============== */
+.box-new-group {
+    margin: 0px 30px 0px 15px;
+    background-color: #fff;
+    width: 50%;
+    height: 68vh;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+}
+.box-new-group:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.new-group-header {
+    margin: 0%;
+    padding: 10px;
+    height: 90px; 
+    background-color: #3a4750;
+    border-radius: 10px;
+}
+
+.header-label {
+    margin: 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+}
+#input {
+    margin-left: 5px;
+    width: 250px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: azure;
+}
+#text-area {
+    width: 580px;
+    border: 1px solid #ffffff;
+    padding: 2px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.member {
+    height: 28vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    justify-content: space-around; 
+}
+
+.box-new-group-bottom {
+    margin: 0px;
+    padding: 10px;
+    text-align: right;
+    justify-items: right;
+    display: block;
+}
+
+.button-gap {
+    justify-content: space-between;
+    gap: 20px
+}
+
+/* ========================================================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

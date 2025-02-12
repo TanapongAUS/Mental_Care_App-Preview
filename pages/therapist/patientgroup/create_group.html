@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Patient Group</title>
+    <meta name="author" content="Group 15" />
+    <link rel="stylesheet" href="../../../styles/global.css" />
+    <link rel="stylesheet" href="../../../styles/therapist.css" />
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="profile-container">
+          <img
+            class="profile"
+            src="../../../public/images/pexels-shvetsa-5257554.jpg"
+            alt="brand-image"
+            width="10%"
+          />
+          <h1>Margaret Sandera</h1>
+        </span>
+        <ul>
+          <li>
+            <i class="fa-solid fa-person"></i>My Patients
+          </li>
+          <li>
+            <a class="active" href="./patient_group.html"
+              ><i class="fa fa-user-group"></i>Group</a
+            >
+          </li>
+          <li>
+            <a href="../../../index.html"
+              ><i class="fa fa-right-from-bracket"></i>Sign out</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="date-therapist">
+        <p id="datetime"></p>
+      </div>
+
+      <div class="create-group-main-container">
+        <div class="box-patient">
+          <div class="create-group-title">
+            <h1>Patients</h1>
+          </div>
+
+          <div
+            class="patient-detail"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          >
+            <div
+              class="member-card"
+              ondragstart="dragStart(event)"
+              ondrag="dragging(event)"
+              draggable="true"
+              id="dragtarget-1"
+            >
+              <img
+                class="group-patient-pic"
+                src="../../../public/images/pexels-andersonguerra-1197132.jpg"
+                alt="patient-image"
+                id="dragtarget-1"
+              />
+              Ella Young
+              <div class="patient-inner-detail" id="dragtarget-1">
+                <p>Age: 59</p>
+                <p>Gender: Female</p>
+                <p>State of Mind: Frustrated</p>
+              </div>
+            </div>
+
+            <div
+              class="member-card"
+              ondragstart="dragStart(event)"
+              ondrag="dragging(event)"
+              draggable="true"
+              id="dragtarget-3"
+            >
+              <img
+                class="group-patient-pic"
+                src="../../../public/images/pexels-pixabay-262391.jpg"
+                alt="patient-image"
+                id="dragtarget-3"
+              />
+              Oliver Wright
+              <div class="patient-inner-detail" id="dragtarget-3">
+                <p>Age: 49</p>
+                <p>Gender: Male</p>
+                <p>State of Mind: Healthy</p>
+              </div>
+            </div>
+
+            <div
+              class="member-card"
+              ondragstart="dragStart(event)"
+              ondrag="dragging(event)"
+              draggable="true"
+              id="dragtarget-2"
+            >
+              <img
+                class="group-patient-pic"
+                src="../../../public/images/pexels-hannah-nelson-390257-1065084.jpg"
+                alt="patient-image"
+                id="dragtarget-2"
+              />
+              Amelia Lewis
+              <div class="patient-inner-detail" id="dragtarget-2">
+                <p>Age: 39</p>
+                <p>Gender: Female</p>
+                <p>State of Mind: Nervous</p>
+              </div>
+            </div>
+
+            <div
+              class="member-card"
+              ondragstart="dragStart(event)"
+              ondrag="dragging(event)"
+              draggable="true"
+              id="dragtarget-4"
+            >
+              <img
+                class="group-patient-pic"
+                src="../../../public/images/pexels-jeffreyreed-769733.jpg"
+                alt="patient-image"
+                id="dragtarget-4"
+              />
+              James Walker
+              <div class="patient-inner-detail" id="dragtarget-4">
+                <p>Age: 29</p>
+                <p>Gender: Male</p>
+                <p>State of Mind: Crazy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-new-group">
+          <div class="create-group-title">
+            <h1>New Group</h1>
+          </div>
+          <div class="new-group-header">
+            <label class="header-label" for="">Group Name:</label>
+            <input
+              type="text"
+              id="input"
+              name="name"
+              placeholder="Group name is required"
+              required
+            />
+            <br />
+            <label class="header-label" for="">Description:</label>
+            <br />
+            <textarea
+              id="text-area"
+              name="message"
+              placeholder="Group description"
+              rows="2"
+              cols=""
+            ></textarea>
+          </div>
+
+          <div
+            class="member"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+          ></div>
+
+          <div class="box-new-group-bottom">
+            <button class="btn btn-submit" onclick="showPopup()">Done</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Confirm Message</h2>
+        </div>
+        <div class="modal-body">
+          <p>Would you like to confirm creating your patient's group?</p>
+        </div>
+        <div class="modal-footer button-gap">
+          <button class="btn btn-add btn-cancel" onclick="hidePopup()">
+            No
+          </button>
+          <a href="./patient_group.html"
+            ><button class="btn btn-add btn-submit">Yes</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="copy-right">
+          <p>&copy;2024 by CaRe. All rights reserved.</p>
+        </div>
+        <div class="contact-details">
+          <span>
+            <i class="fa fa-phone"></i>
+            <p>0412354143</p>
+          </span>
+          <span>
+            <i class="fa fa-envelope"></i>
+            <p>care-support@care.com.au</p>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../../scripts/script.js"></script>
+    <script>
+      function showPopup() {
+        console.log("Show Dialog...");
+        showDialog();
+      }
+      function hidePopup() {
+        hideDialog();
+      }
+    </script>
+  </body>
+</html>
